@@ -10,7 +10,39 @@ body {
     font-family: var(--font-family);
     background-color: var(--background-color);
     color: var(--primary-color);
+     display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 50px 150px 150px 50px;
+    grid-template-areas:
+         "head head" 
+         "nav main"
+         "article main"
+         "foot foot";
 }
+header {
+    grid-area: head;
+    text-align: center;
+}
+nav {
+    grid-area: nav;
+    padding-right: 20px;
+    border-right: 3px solid var(--primary-color);
+}
+main {
+    grid-area: main;
+    padding: 20px;
+}
+article {
+    grid-area: article;
+    padding: 20px;
+}
+footer {
+    grid-area: foot;
+    text-align: center;
+    border-top: 3px solid var(--primary-color);
+    padding-top: 10px;
+}
+
 div h1 {
     display: block;
     font-size: 38px;
