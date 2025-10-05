@@ -5,19 +5,7 @@
     --font-family: 'Times New Roman', Times, serif;
     --hover-color: rgb(25, 0, 255);
 }
-body {
-    margin: 50px;
-    font-family: var(--font-family);
-    color: var(--primary-color);
-     display: grid;
-    grid-template-columns: 10% auto;
-    grid-template-rows: 25% 70% auto 15;
-    grid-template-areas:
-         "head head" 
-         "nav main"
-         "article main"
-         "foot foot";
-}
+/* header styles */
 header {
     grid-area: head;
     text-align: center;
@@ -32,35 +20,76 @@ nav {
     grid-area: nav;
     padding-right: 20px;
     position: fixed;
-    top: 10%;
-}
-main {
-    grid-area: main;
-    padding: 10%;
-    margin-left: 5%;
-    margin-right: 10%;
-    border: 1px solid var(--primary-color);
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    background-color: rgb(245, 245, 220);
-}
-main h1 {
-    display: block;
-    font-size: 38px;
-    border-bottom: 3px solid var(--primary-color);
-    text-align: center;
-}
-article {
-    grid-area: article;
-    padding: 20px;
-}
-footer {
-    grid-area: foot;
-    text-align: center;
-    border-top: 3px solid var(--primary-color);
-    padding-top: 10px;
+    top: 18%;
 }
 
+/* body styles */
+body {
+    margin: 50px;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+     display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows: 25% 70% auto 15;
+    grid-template-areas:
+         "head head" 
+         "nav main"
+         "article main"
+         "foot foot";
+}
+
+    main {
+        grid-area: main;
+        padding: 10%;
+        margin-left: 5%;
+        margin-right: 10%;
+        border: 1px solid var(--primary-color);
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        background-color: rgb(245, 245, 220);
+    }
+    main h1 {
+        display: block;
+        font-size: 38px;
+        border-bottom: 3px solid var(--primary-color);
+        text-align: center;
+    }
+
+        ul em {
+            color: var(--primary-color);
+            font-family: sans-serif;
+            text-decoration: underline;
+        }
+        ul strong {
+            color: var(--primary-color);
+            font-family: sans-serif;
+            text-decoration: underline;
+        }
+            #skills caption {
+                font-family:Verdana;
+                display:block;
+                border-top: 1px solid var(--primary-color);
+                border-bottom: 1px solid var(--primary-color);
+                position:left 50px;
+                font-size: 16px;
+                font-weight: bold;
+                color: var(--primary-color);
+            }
+            #skills tr th {
+                width: 200px;
+                text-align: left;
+                border-right: 3px solid var(--primary-color);
+            }
+            #skills tr th:hover {
+                text-decoration: underline;
+            }
+            #skills tr td {
+                width: auto;
+                margin-left: 10px;
+                border-bottom: 1px solid var(--primary-color);
+            }
+
+/* link styles */
 a {
     color: var(--secondary-color);
 }
@@ -68,46 +97,13 @@ a:hover {
     color: var(--hover-color);
 }
 
-/* Experience styles */
-ul em {
-    color: var(--primary-color);
-    font-family: sans-serif;
-    text-decoration: underline;
-}
-ul strong {
-    color: var(--primary-color);
-    font-family: sans-serif;
-    text-decoration: underline;
-}
-
-/* Skills styles */
-#skills caption {
-    font-family:Verdana;
-    display:block;
-    border-top: 1px solid var(--primary-color);
-    border-bottom: 1px solid var(--primary-color);
-    position:left 50px;
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--primary-color);
-}
-#skills tr th {
-    width: 200px;
-    text-align: left;
-    border-right: 3px solid var(--primary-color);
-}
-#skills tr th:hover {
-    text-decoration: underline;
-}
-#skills tr td {
-    width: auto;
-    margin-left: 10px;
-    border-bottom: 1px solid var(--primary-color);
-}
-
 /* footer styles */
 footer {
     margin-top: 20px;
+    padding-top: 10px;
+    grid-area: foot;
+    text-align: center;
+    border-top: 3px solid var(--primary-color);
     padding-top: 10px;
 }
 footer h3 {
@@ -118,6 +114,10 @@ footer h3 {
 footer div {
     font-size: 14px;
     color: rgb(0, 0, 0);
+}
+article {
+    grid-area: article;
+    padding: 20px;
 }
 article>p>span {
     color: rgb(0, 0, 0);
