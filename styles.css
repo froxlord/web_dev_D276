@@ -32,7 +32,7 @@ nav {
     grid-area: nav;
     padding-right: 20px;
     position: fixed;
-    top: 10%;
+    top: 18%;
 }
 main {
     grid-area: main;
