@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Goals</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="background" href="background_img_1.0.jpg">
+    <link rel="background" href="career_goals_background.jpg">
+    <link rel="graduation" href="graduation.mp4">
+    <link rel="internship" href="internship.mp4">
+    <link rel="PHD" href="PHD.mp4">
     <style>
         body {
-            background-image: url("background_img_1.0.jpg");
+            background-image: url("career_goals_background.jpg");
             background-size: cover;
+            margin: 10px;
+            font-family: var(--font-family);
+            color: rgb(5, 5, 44);
+            display: grid;
+            grid-template-columns: 10% auto;
+            grid-template-rows: 25% 70% auto 15%;
+            grid-template-areas:
+                "head head" 
+                "nav main"
+                "    main"
+                "foot foot";
+        }
+        main {
+            background-color: rgba(206, 231, 238, 0.5);
         }
     </style>
 </head>
@@ -18,20 +35,31 @@
         <h1>My Career Goals</h1>
     </header>
     <main>
-        <section>
-            <h2>Short-term Goals</h2>
-            <ul>
-                <li>Complete my Bachelor's degree in Computer Science</li>
-                <li>Secure an internship in software development</li>
-                <li>Improve my skills in Python and JavaScript</li>
-            </ul>
+        <section id="introduction">
+            <p>As a junior computer scientist eager to begin my professional journey, my goal is to apply my growing technical skills 
+                to real-world challenges while continuing to learn and expand my expertise. I am passionate about exploring innovative 
+                solutions through programming, data analysis, and problem-solving, and I’m motivated to contribute to projects that drive 
+                technological progress. This first step in my career represents an exciting opportunity to gain hands-on experience, 
+                collaborate with professionals in the field, and lay the foundation for a successful future in computer science.
+            </p>
         </section>
-        <section>
+        <section >
+            <h2>Short-term Goals</h2>
+            <div id="Short-term">
+                    <div>Complete a Bachelor's degree in Computer Science <video autoplay muted loop><source src="graduation.mp4" type="video/mp4"></video></div>
+                    <div>Secure an internship in software development <video autoplay muted loop><source src="internship.mp4" type="video/mp4"></video></div>
+                    <div>Earn a master and a PhD in Cybersecurity and Robotics <video autoplay muted loop><source src="PHD.mp4" type="video/mp4"></video></div>
+            </div>
+        </section>
+        <section id="Long-term">
             <h2>Long-term Goals</h2>
             <ul>
                 <li>Obtain a full-time position as a software developer</li>
-                <li>Contribute to open-source projects</li>
-                <li>Continue learning and growing in my field</li>
+                <li>Become an independent consultant</li>
+                <li>Build a software-as-a-service (SaaS) product</li>
+                <li>Found my own tech startup</li>
+                <li>Publish original research</li>
+                <li>Achieve work-life balance</li>
             </ul>
         </section>
     </main>
