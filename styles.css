@@ -10,7 +10,7 @@
 header {
     grid-area: head;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 50px; 
     padding-bottom: 10px;
     border-bottom: 3px solid var(--primary-color);
     font-size: 20px;
@@ -21,7 +21,7 @@ nav {
     grid-area: nav;
     padding-right: 20px;
     position: fixed;
-    top: 150px;
+    top: 18%;
 }
 
 /* body styles */
@@ -29,69 +29,63 @@ body {
     margin: 50px;
     font-family: var(--font-family);
     color: var(--primary-color);
-    display: grid;
-    grid-template-columns: 10% auto;
-    grid-template-rows: 15% 70% auto 15%;
-    grid-template-areas:
-         "head head" 
-         "nav main"
-         "article main"
-         "foot foot";
 }
 
-    main {
-        grid-area: main;
-        padding: 50px;     
-        margin-left: 5%;
-        margin-right: 10%;
-        border: 1px solid var(--primary-color);
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-        border-radius: 5px;
-        background-color: rgb(245, 245, 220,0.9);
-    }
-    main h1 {
-        display: block;
-        font-size: 38px;
-        border-bottom: 3px solid var(--primary-color);
-        text-align: center;
-    }
+main {
+    grid-area: main;
+    padding: 8%;
+    margin-left: 5%;
+    margin-right: 10%;
+    border: 1px solid var(--primary-color);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: rgb(245, 245, 220,0.9);
+}
+main h1 {
+    display: block;
+    font-size: 38px;
+    border-bottom: 3px solid var(--primary-color);
+    text-align: center;
+}
 
-        ul em {
-            color: var(--primary-color);
-            font-family: sans-serif;
-            text-decoration: underline;
-        }
-        ul strong {
-            color: var(--primary-color);
-            font-family: sans-serif;
-            text-decoration: underline;
-        }
-            #skills caption {
-                font-family:Verdana;
-                display:block;
-                border-top: 1px solid var(--primary-color);
-                border-bottom: 1px solid var(--primary-color);
-                position:left 50px;
-                font-size: 16px;
-                font-weight: bold;
-                color: var(--primary-color);
-            }
-            #skills tr th {
-                width: 200px;
-                text-align: left;
-                border-right: 3px solid var(--primary-color);
-            }
-            #skills tr th:hover {
-                text-decoration: underline;
-            }
-            #skills tr td {
-                width: auto;
-                margin-left: 10px;
-                border-bottom: 1px solid var(--primary-color);
-            }
-            #skills tr td:hover {
-                text-decoration: underline;
-            }
+ul em {
+    color: var(--primary-color);
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+ul strong {
+    color: var(--primary-color);
+    font-family: sans-serif;
+    text-decoration: underline;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+#skills caption {
+    font-family:Verdana;
+    display:block;
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    position:left 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+#skills tr th {
+    width: 200px;
+    text-align: left;
+    border-right: 3px solid var(--primary-color);
+}
+#skills tr th:hover {
+    text-decoration: underline;
+}
+#skills tr td {
+    width: auto;
+    margin-left: 10px;
+    border-bottom: 1px solid var(--primary-color);
+}
+#skills tr td:hover {
+    text-decoration: underline;
+}
 #Short-term {
     display: flex;
     justify-content: space-between;
@@ -120,6 +114,12 @@ body {
 #Short-term div video {
     width: 97%;
     height: auto;
+}
+input[type="text"], input[type="email"], textarea, input[type="tel"], select, button, input[type="submit"] {
+    border-radius: 1px;
+    border: 1px solid var(--primary-color);
+    background-color: rgb(198, 232, 238, 0.5);
+ 
 }
 /* link styles */
 a {

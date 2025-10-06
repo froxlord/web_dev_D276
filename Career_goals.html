@@ -9,11 +9,11 @@
     <link rel="graduation" href="graduation.mp4">
     <link rel="internship" href="internship.mp4">
     <link rel="PHD" href="PHD.mp4">
+    <link rel="background_music" href="background_music.mp3">
     <style>
         body {
             background-image: url("career_goals_background.jpg");
             background-size: cover;
-            margin: 10px;
             font-family: var(--font-family);
             color: rgb(5, 5, 44);
             display: grid;
@@ -22,11 +22,13 @@
             grid-template-areas:
                 "head head" 
                 "nav main"
-                "    main"
+                "article main"
                 "foot foot";
         }
         main {
             background-color: rgba(206, 231, 238, 0.5);
+            margin-left: 10%;
+            margin-right: 5%;
         }
     </style>
 </head>
@@ -34,6 +36,55 @@
     <header>
         <h1>My Career Goals</h1>
     </header>
+    <nav style="position:relative;">
+    <div class="form" style="margin-left : 5px; border: 1px solid var(--primary-color); 
+    padding: 10px; background-color: rgba(206, 231, 238, 0.5); width:fit-content; position:absolute; top:5%;">
+        <form action="https://wp.zybooks.com/form-viewer.php" method="get" target="_blank">
+            <p>
+                <label for="first">First name:</label>
+                <input type="text" id="first" name="first" required>
+            </p>
+            <p>
+                <label for="last">Last name:</label>
+                <input type="text" id="last" name="last" required >
+            </p>
+            <p>
+                <label for="company">Company name:</label>
+                <input type="text" id="company" name="company">
+            </p>
+            <p>
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone">
+            </p>
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="30"></textarea>
+            </p>
+            <p>
+                <label for="time">Best contact time:</label>
+                <input type="radio" id="AM" name="time" value="AM" checked>
+                <label for="AM">AM</label>
+                <input type="radio" id="PM" name="time" value="PM">
+                <label for="PM">PM</label>
+                <input type="radio" id="anytime" name="time" value="anytime">
+                <label for="anytime">Anytime</label>
+            </p>
+            <p>
+                <label for="select">Select an option:</label>
+                <select id="select" name="select">
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                    <option value="text">Text</option>
+                </select>
+            </p>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </nav>
     <main>
         <section id="introduction">
             <p>As a junior computer scientist eager to begin my professional journey, my goal is to apply my growing technical skills 
@@ -63,6 +114,10 @@
             </ul>
         </section>
     </main>
+    <article>
+        <audio controls autoplay loop><source src="background_music.mp3" type="audio/mpeg"></audio>
+        <p>Success' Ringtone</p>
+    </article>
     <footer>
         <p>&copy; 2025 Frantz Roodly Oxavier</p>
     </footer>

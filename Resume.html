@@ -10,6 +10,14 @@
         body {
             background-image: url("background_img_1.0.jpg");
             background-size: cover;
+            display: grid;
+            grid-template-columns: 10% auto;
+            grid-template-rows: 15% 70% auto 15%;
+            grid-template-areas:
+                "head head" 
+                "nav main"
+                "article main"
+                "foot foot";
         }
     </style>
 </head>
